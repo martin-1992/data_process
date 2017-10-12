@@ -2,6 +2,8 @@
 
 环境：Python3
 
+raw_data: 存放测试数据，数据来源 https://www.kaggle.com/c/two-sigma-connect-rental-listing-inquiries/data
+
 ## convertAvg.py
 参考 https://github.com/kaz-Anova/StackNet/blob/master/example/twosigma_kaggle/create_files_v1.py
 
