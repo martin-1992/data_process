@@ -2,7 +2,7 @@
 
 环境：Python3
 
-# convertAvg.py
+## convertAvg.py
 参考 https://github.com/kaz-Anova/StackNet/blob/master/example/twosigma_kaggle/create_files_v1.py
 
 计算goods/bads来计算后验值，其中goods为某列的特征值对应的y值之和，bads为某列的特征值对应的y值的频数，
