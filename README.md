@@ -35,6 +35,6 @@ reference: https://github.com/plantsgo/Rental-Listing-Inquiries/blob/master/scri
 - 调整阈值，前面有提到；
 - 代价敏感学习，部分算法内含参数class_weight，使用该参数调整正反例学习的代价，即调整正反例的权重；
 
-reference：
+reference：</br >
 http://contrib.scikit-learn.org/imbalanced-learn/stable/user_guide.html </br >
 《机器学习 - 周志华》
