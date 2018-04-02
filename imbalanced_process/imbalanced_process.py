@@ -14,7 +14,7 @@ from collections import Counter
 
 
 ########################################################################
-# 读取文件
+# 读取mat格式的文件
 def readFile(file_name):
     # 读取文件
     mat_file = loadmat(file_name)
