@@ -55,8 +55,8 @@ def buildModel(clf, X, y, cv_nums=10, is_random=False):
     print('SMOTE: ', np.mean(cross_val_score(clf, X_smote, y_smote, scoring='f1', cv=cv_nums)))
 
     # 将样本多的类别划分为若干个集合供不同学习器使用，这样对每个学习器来看都进行了欠采样，
-    # 但在全局来看却不会丢失重要信息，假设将正样本的类别划分为10份，负样本的类别只有1份，
-    # 这样训练10个学习器，每个学习器使用1份正样本和1份负样本，负样本共用
+    # 但在全局来看却不会丢失重要信息，假设将负样本的类别划分为10份，正样本的类别只有1份，
+    # 这样训练10个学习器，每个学习器使用1份负样本和1份正样本，正样本共用
     ee = EasyEnsemble(random_state=random_lst[3], n_subsets=10)
     X_ee, y_ee = ee.fit_sample(X, y)
     # shape=(n_subsets * rows * cols)
