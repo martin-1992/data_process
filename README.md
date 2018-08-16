@@ -34,6 +34,7 @@ reference: https://github.com/plantsgo/Rental-Listing-Inquiries/blob/master/scri
 - EasyEnsemble，假设将反例划分成10份，正例只有1份，训练10个学习器，每个学习器使用1份反例和1份正例，正例共用。在集合求结果，优点是不会丢失重要信息；
 - 调整阈值，前面有提到；
 - 代价敏感学习，部分算法内含参数class_weight，使用该参数调整正反例学习的代价，即调整正反例的权重；
+- 对于回归标签存在的长尾现象，可对长尾进行重采样，或者对label数值取log，使分布更线性一些；
 
 reference：</br >
 http://contrib.scikit-learn.org/imbalanced-learn/stable/user_guide.html </br >
